@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DH101 - Critical Making</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Trebuchet MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #fff5f7 0%, #ffe6f0 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff69b4 0%, #ff85c1 100%);
+            border-bottom: 4px dashed #ff1493;
+            padding: 2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.5);
+            transform: rotate(-2deg);
+            display: inline-block;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #fff;
+            font-style: italic;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            background-color: #fff;
+            border-bottom: 3px solid #ff69b4;
+            padding: 1.5rem 0;
+            margin-top: 1rem;
+            box-shadow: 0 2px 10px rgba(255, 105, 180, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ff1493;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 0.25rem;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #ff69b4;
+            border-bottom-color: #ff69b4;
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 3rem 0;
+            min-height: calc(100vh - 200px);
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: #ff1493;
+            margin-bottom: 0.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section h2::before {
+            content: '✨ ';
+        }
+
+        .section h2::after {
+            content: ' ✨';
+        }
+
+        .week-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .week-card {
+            background: linear-gradient(135deg, #fff0f5 0%, #ffe0ec 100%);
+            border: 3px solid #ff69b4;
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .week-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 192, 203, 0.5) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .week-card:hover {
+            border-color: #ff1493;
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+            transform: translateY(-5px) rotate(1deg) scale(1.05);
+        }
+
+        .week-card:hover::before {
+            opacity: 1;
+        }
+
+        .week-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #ff1493;
+            font-weight: 800;
+        }
+
+        .page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .page-card {
+            background: linear-gradient(135deg, #ffc0cb 0%, #ffb6d9 100%);
+            border: 3px dashed #ff1493;
+            padding: 1.5rem;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+            position: relative;
+        }
+
+        .page-card:hover {
+            border-color: #ff69b4;
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.5);
+            transform: translateY(-5px) rotate(-1deg) scale(1.05);
+        }
+
+        .page-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            font-weight: 800;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            background: linear-gradient(135deg, #fff 0%, #fff5f7 100%);
+            padding: 2rem;
+            border: 3px solid #ff69b4;
+            border-radius: 15px;
+            margin-top: 1rem;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+        }
+
+        .content h2 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.8rem;
+            color: #ff1493;
+        }
+
+        .content h3 {
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            color: #ff69b4;
+        }
+
+        .content h4 {
+            color: #ff85c1;
+            margin-top: 1rem;
+            font-weight: 700;
+        }
+
+        .content p {
+            margin-bottom: 1rem;
+        }
+
+        .content ul, .content ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #ff69b4 0%, #ff85c1 100%);
+            border-top: 4px dashed #ff1493;
+            padding: 2rem;
+            text-align: center;
+            color: #fff;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+            font-weight: 600;
+            box-shadow: 0 -4px 15px rgba(255, 105, 180, 0.3);
+        }
+
+        .decoration {
+            font-size: 2rem;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .week-grid, .page-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 1rem;">
+                <span class="decoration">💕</span>
+                <span class="decoration" style="animation-delay: 0.2s;">✨</span>
+                <span class="decoration" style="animation-delay: 0.4s;">🎨</span>
+                <span class="decoration" style="animation-delay: 0.6s;">💫</span>
+                <span class="decoration" style="animation-delay: 0.8s;">💕</span>
+            </div>
+            <h1>DH101</h1>
+            <p class="subtitle">Critical Making This Semester</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#home" onclick="showSection('home')">Home</a></li>
+            <li><a href="#makes" onclick="showSection('makes')">Makes</a></li>
+            <li><a href="#reflections" onclick="showSection('reflections')">Reflections</a></li>
+            <li><a href="#pages" onclick="showSection('pages')">Pages</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="content">
+                <h2>Welcome</h2>
+                <p>Hello, DH — this site documents my critical making this semester.</p>
+                <p style="margin-top: 2rem; font-size: 1.2rem; letter-spacing: 0.5rem;">rrrrrrrrr</p>
+            </div>
+        </section>
+
+        <!-- Makes Section -->
+        <section id="makes" class="section">
+            <h2>Makes</h2>
+            <p style="color: #666; margin-top: 0.5rem;">Weekly making projects and artifacts</p>
+            <div class="week-grid">
+                <div class="week-card" onclick="loadContent('makes', 'week01')">
+                    <h3>Week 1</h3>
+                    <p>Reverse Engineering</p>
+                </div>
+                <div class="week-card" onclick="loadContent('makes', 'week03')">
+                    <h3>Week 3</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('makes', 'week04')">
+                    <h3>Week 4</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('makes', 'week05')">
+                    <h3>Week 5</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('makes', 'week06')">
+                    <h3>Week 6</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('makes', 'week07')">
+                    <h3>Week 7</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('makes', 'week08')">
+                    <h3>Week 8</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('makes', 'week09')">
+                    <h3>Week 9</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('makes', 'week10')">
+                    <h3>Week 10</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('makes', 'week11')">
+                    <h3>Week 11</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('makes', 'week12')">
+                    <h3>Week 12</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('makes', 'week13')">
+                    <h3>Week 13</h3>
+                </div>
+            </div>
+            <div id="makes-content" class="content" style="display: none; margin-top: 2rem;"></div>
+        </section>
+
+        <!-- Reflections Section -->
+        <section id="reflections" class="section">
+            <h2>Reflections</h2>
+            <p style="color: #666; margin-top: 0.5rem;">Weekly reflection prompts and responses</p>
+            <div class="week-grid">
+                <div class="week-card" onclick="loadContent('reflections', 'week01')">
+                    <h3>Week 1</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('reflections', 'week02')">
+                    <h3>Week 2</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('reflections', 'week03')">
+                    <h3>Week 3</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('reflections', 'week04')">
+                    <h3>Week 4</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('reflections', 'week05')">
+                    <h3>Week 5</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('reflections', 'week06')">
+                    <h3>Week 6</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('reflections', 'week07')">
+                    <h3>Week 7</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('reflections', 'week08')">
+                    <h3>Week 8</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('reflections', 'week09')">
+                    <h3>Week 9</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('reflections', 'week10')">
+                    <h3>Week 10</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('reflections', 'week11')">
+                    <h3>Week 11</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('reflections', 'week12')">
+                    <h3>Week 12</h3>
+                </div>
+                <div class="week-card" onclick="loadContent('reflections', 'week13')">
+                    <h3>Week 13</h3>
+                </div>
+            </div>
+            <div id="reflections-content" class="content" style="display: none; margin-top: 2rem;"></div>
+        </section>
+
+        <!-- Pages Section -->
+        <section id="pages" class="section">
+            <h2>Pages</h2>
+            <p style="color: #666; margin-top: 0.5rem;">Additional resources and information</p>
+            <div class="page-grid">
+                <div class="page-card" onclick="loadContent('pages', 'about')">
+                    <h3>About</h3>
+                    <p>About Me</p>
+                </div>
+                <div class="page-card" onclick="loadContent('pages', 'how-i-use-ai')">
+                    <h3>AI Use</h3>
+                    <p>How I Use AI</p>
+                </div>
+                <div class="page-card" onclick="loadContent('pages', 'accessibility')">
+                    <h3>Accessibility</h3>
+                </div>
+                <div class="page-card" onclick="loadContent('pages', 'sustainability')">
+                    <h3>Sustainability</h3>
+                </div>
+                <div class="page-card" onclick="loadContent('pages', 'markdown-guide')">
+                    <h3>Markdown</h3>
+                    <p>Markdown Guide</p>
+                </div>
+            </div>
+            <div id="pages-content" class="content" style="display: none; margin-top: 2rem;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div style="margin-bottom: 1rem;">
+            <span class="decoration">🎨</span>
+            <span class="decoration" style="animation-delay: 0.2s;">💕</span>
+            <span class="decoration" style="animation-delay: 0.4s;">✨</span>
+            <span class="decoration" style="animation-delay: 0.6s;">💫</span>
+        </div>
+        <p>&copy; 2026 DH101 Critical Making. All content stored as markdown. 🌸</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Hide all content divs
+            document.querySelectorAll('[id$="-content"]').forEach(el => el.style.display = 'none');
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        function loadContent(folder, file) {
+            const contentDiv = document.getElementById(folder + '-content');
+            
+            // Simulate loading markdown content
+            // In a real implementation, this would fetch the actual markdown files
+            const contentMap = {
+                'makes-week01': '<h3>Week 1 – Reverse Engineering</h3><h4>The Artifact</h4><p>Describe or embed your artifact here. Include images, links, or media as appropriate.</p><h4>Process Notes</h4><p>How did you make this? What tools did you use? What decisions did you make?</p><h4>Reflection</h4><p>Respond to this week\'s reflection prompt in 200–300 words.</p><h4>Attribution & AI Use</h4><ul><li>Tools used:</li><li>AI prompts (summary):</li><li>What AI generated:</li><li>What you changed or decided:</li></ul>',
+                'pages-about': '<h3>About Me</h3><p>Introduce yourself and your interests.</p>'
+            };
+
+            const key = folder + '-' + file;
+            contentDiv.innerHTML = contentMap[key] || `<p>Content for ${file} would be loaded here.</p>`;
+            contentDiv.style.display = 'block';
+            contentDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
+</body>
+</html>
