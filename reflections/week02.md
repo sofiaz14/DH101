@@ -3,3 +3,4 @@
 # Week 2 Reflection
 
 Reflect 2: Can AI help us define what it means to be human, or does it reduce us to patterns?
+I think AI tends to reduce humans to patterns by translating behaviors and thoughts into data that can be predicted and categorized. While this can be useful for efficiency, it risks flattening human identity into what is statistically legible rather than what is deeply meaningful. It also undermines human thought by encouraging reliance on a program to think or create for us, even though humans are capable of doing these things themselves. In this way, I believe AI can act as a crutch, weakening critical thinking. As AI becomes increasingly central to everyday life, it will inevitably shape how humans are defined, but I think it does so in a way that reduces us to patterns, especially given how deeply embedded it already is in today’s society.
