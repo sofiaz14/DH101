@@ -2,3 +2,4 @@
 # Week 3 Reflection
 
 Reflect 3: What does “authenticity” mean when identity is co-constructed with AI?
+When identity is co-constructed with AI, the concept of "authenticity" shifts from uniqueness to the extent to which people accept machine-generated copies of themselves. AI reflects cultural preferences and norms, so the identity it helps create is shaped by both personal decisions and algorithmic factors. This blurs the distinction between self-expression and optimization, allowing individuals to exhibit what society deems best rather than what feels most real. As a result, authenticity shifts from your true self to a negotiated identity mediated by technology that is shaped by societal standards.
