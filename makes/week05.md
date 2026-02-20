@@ -1,7 +1,7 @@
 # Week 5 – GIF & Remix Culture
 
 ## The Artifact
-Describe or embed your artifact here.
+![Cute barking dog](../Assets/Images/cute-barking-dog.gif)
 Include images, links, or media as appropriate.
 
 ## Process Notes
