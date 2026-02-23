@@ -474,25 +474,31 @@
             fetch(`${folder}/${file}.md`)
                 .then(response => response.text())
                 .then(markdown => {
-                    // Simple markdown to HTML conversion
+                    // Convert markdown to HTML
                     let html = markdown
+                        .trim()
                         .replace(/^# (.*?)$/gm, '<h2>$1</h2>')
                         .replace(/^## (.*?)$/gm, '<h3>$1</h3>')
                         .replace(/^### (.*?)$/gm, '<h4>$1</h4>')
                         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                         .replace(/\*(.*?)\*/g, '<em>$1</em>')
                         .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
-                        .replace(/^> /gm, '') // Remove blockquote markers
-                        .replace(/\n\n+/g, '</p><p>') // Paragraph breaks
-                        .replace(/\n- /gm, '<br>• '); // List items
+                        .replace(/^> (.*?)$/gm, '<blockquote>$1</blockquote>')
+                        .split('\n\n')
+                        .map(para => {
+                            if (para.match(/^<h[1-6]/)) return para;
+                            if (para.match(/^<blockquote/)) return para;
+                            if (para.trim() === '') return '';
+                            return '<p>' + para.trim() + '</p>';
+                        })
+                        .join('\n');
                     
-                    html = '<p>' + html + '</p>';
-                    html = html.replace(/<p>\s*<\/p>/g, ''); // Remove empty paragraphs
                     contentDiv.innerHTML = html;
                     contentDiv.style.display = 'block';
                     contentDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 })
                 .catch(error => {
+                    console.error('Error loading file:', error);
                     contentDiv.innerHTML = `<p>Unable to load content for ${file}.</p>`;
                     contentDiv.style.display = 'block';
                 });
