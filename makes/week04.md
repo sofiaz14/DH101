@@ -1,8 +1,10 @@
 # Week 4 – Comic & Storytelling
 
 ## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+
+![Week 4 Comic - Living with My Landlord](../Assets/week04-comic.png)
+
+A comic strip telling the story of living with a landlord through humorous interactions, featuring a cat as a character.
 
 ## Process Notes
 How did you make this?
