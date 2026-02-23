@@ -470,17 +470,33 @@
         function loadContent(folder, file) {
             const contentDiv = document.getElementById(folder + '-content');
             
-            // Simulate loading markdown content
-            // In a real implementation, this would fetch the actual markdown files
-            const contentMap = {
-                'makes-week01': '<h3>Week 1 – Reverse Engineering</h3><h4>The Artifact</h4><p>Describe or embed your artifact here. Include images, links, or media as appropriate.</p><h4>Process Notes</h4><p>How did you make this? What tools did you use? What decisions did you make?</p><h4>Reflection</h4><p>Respond to this week\'s reflection prompt in 200–300 words.</p><h4>Attribution & AI Use</h4><ul><li>Tools used:</li><li>AI prompts (summary):</li><li>What AI generated:</li><li>What you changed or decided:</li></ul>',
-                'pages-about': '<h3>About Me</h3><p>Introduce yourself and your interests.</p>'
-            };
-
-            const key = folder + '-' + file;
-            contentDiv.innerHTML = contentMap[key] || `<p>Content for ${file} would be loaded here.</p>`;
-            contentDiv.style.display = 'block';
-            contentDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Fetch markdown file
+            fetch(`${folder}/${file}.md`)
+                .then(response => response.text())
+                .then(markdown => {
+                    // Simple markdown to HTML conversion
+                    let html = markdown
+                        .replace(/^# (.*?)$/gm, '<h2>$1</h2>')
+                        .replace(/^## (.*?)$/gm, '<h3>$1</h3>')
+                        .replace(/^### (.*?)$/gm, '<h4>$1</h4>')
+                        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                        .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                        .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
+                        .replace(/^- (.*?)$/gm, '<li>$1</li>')
+                        .replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>')
+                        .replace(/\n\n/g, '</p><p>')
+                        .replace(/^/gm, '')
+                        .replace(/^>.*$/gm, ''); // Remove blockquotes for cleaner display
+                    
+                    html = '<p>' + html + '</p>';
+                    contentDiv.innerHTML = html;
+                    contentDiv.style.display = 'block';
+                    contentDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                })
+                .catch(error => {
+                    contentDiv.innerHTML = `<p>Unable to load content for ${file}.</p>`;
+                    contentDiv.style.display = 'block';
+                });
         }
     </script>
 </body>
