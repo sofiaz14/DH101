@@ -482,13 +482,12 @@
                         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                         .replace(/\*(.*?)\*/g, '<em>$1</em>')
                         .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
-                        .replace(/^- (.*?)$/gm, '<li>$1</li>')
-                        .replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>')
-                        .replace(/\n\n/g, '</p><p>')
-                        .replace(/^/gm, '')
-                        .replace(/^>.*$/gm, ''); // Remove blockquotes for cleaner display
+                        .replace(/^> /gm, '') // Remove blockquote markers
+                        .replace(/\n\n+/g, '</p><p>') // Paragraph breaks
+                        .replace(/\n- /gm, '<br>• '); // List items
                     
                     html = '<p>' + html + '</p>';
+                    html = html.replace(/<p>\s*<\/p>/g, ''); // Remove empty paragraphs
                     contentDiv.innerHTML = html;
                     contentDiv.style.display = 'block';
                     contentDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
