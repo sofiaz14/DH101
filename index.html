@@ -477,6 +477,7 @@
                     // Convert markdown to HTML
                     let html = markdown
                         .trim()
+                        .replace(/!\[(.*?)\]\((.*?)\)/g, '<img src="$2" alt="$1" style="max-width: 100%; height: auto; border-radius: 10px; margin: 1rem 0;">')
                         .replace(/^# (.*?)$/gm, '<h2>$1</h2>')
                         .replace(/^## (.*?)$/gm, '<h3>$1</h3>')
                         .replace(/^### (.*?)$/gm, '<h4>$1</h4>')
@@ -488,6 +489,7 @@
                         .map(para => {
                             if (para.match(/^<h[1-6]/)) return para;
                             if (para.match(/^<blockquote/)) return para;
+                            if (para.match(/^<img/)) return para;
                             if (para.trim() === '') return '';
                             return '<p>' + para.trim() + '</p>';
                         })
