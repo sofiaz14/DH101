@@ -1,4 +1,5 @@
 # Week 5 Reflection
 
 Reflect 5: How does AI alter authorship and remix culture? Who owns AI-made art?
+
 AI alters authorship and remix culture by making creation a collaborative process between human intention and automated generation. Instead of artists producing work entirely from scratch, AI systems remix existing patterns, styles, and data to create new images, which blurs the line between original creation and recombination. This challenges traditional ideas of ownership because the final product is shaped by both human direction and algorithms trained on massive collections of prior works. While users may feel ownership over what they prompt and select, the underlying material comes from a broader cultural archive that the AI has learned from. As a result, AI-made art exists in a gray area where creativity and ownership are shared among human choice, technological factors, and digital culture.
