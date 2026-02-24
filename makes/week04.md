@@ -20,7 +20,7 @@ After I came up with my idea, I started working on my comic and decided to use a
 Overall, using AI in this project showed me that while it can be helpful for visual production, it is not very effective for creative thinking or developing meaningful ideas. The strongest part of my comic came from my own concept, while the AI functioned more as a tool to execute the visuals rather than a creative partner.
 
 ## Attribution & AI Use
-- Tools used:
+- Tools used: Canva, Nano Banana
 - AI prompts (summary):
 - What AI generated:
 - What you changed or decided:
