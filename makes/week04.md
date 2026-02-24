@@ -23,4 +23,4 @@ Overall, using AI in this project showed me that while it can be helpful for vis
 - Tools used: Canva, Nano Banana
 - AI prompts (summary): I asked the AI to create six different images of a human and her cat. I described what I was using the images for and what the comic was about, so the AI was more accurate in what I was looking for.
 - What AI generated: Nano Banana generated six images for my comic.
-- What you changed or decided:
+- What you changed or decided: Every time the AI gave me an image, I had to change something. Whether that was the background layout, putting the cat closer in the frame, or changing the woman's facial expression.
