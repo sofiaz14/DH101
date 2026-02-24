@@ -2,7 +2,7 @@
 
 ## The Artifact
 
-![Week 4 Comic - Living with My Landlord](../Assets/week04-comic.png)
+![Week 4 Comic - Living with My Landlord](Assets/week04-comic.png)
 
 A comic strip telling the story of living with a landlord through humorous interactions, featuring a cat as a character.
 
