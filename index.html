@@ -454,6 +454,7 @@
         <p>&copy; 2026 DH101 Critical Making. All content stored as markdown. 🌸</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
         function showSection(sectionId) {
             // Hide all sections
@@ -474,26 +475,20 @@
             fetch(`${folder}/${file}.md`)
                 .then(response => response.text())
                 .then(markdown => {
-                    // Convert markdown to HTML
-                    let html = markdown
-                        .trim()
-                        .replace(/!\[(.*?)\]\((.*?)\)/g, '<img src="$2" alt="$1" style="max-width: 100%; height: auto; border-radius: 10px; margin: 1rem 0;">')
-                        .replace(/^# (.*?)$/gm, '<h2>$1</h2>')
-                        .replace(/^## (.*?)$/gm, '<h3>$1</h3>')
-                        .replace(/^### (.*?)$/gm, '<h4>$1</h4>')
-                        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                        .replace(/\*(.*?)\*/g, '<em>$1</em>')
-                        .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
-                        .replace(/^> (.*?)$/gm, '<blockquote>$1</blockquote>')
-                        .split('\n\n')
-                        .map(para => {
-                            if (para.match(/^<h[1-6]/)) return para;
-                            if (para.match(/^<blockquote/)) return para;
-                            if (para.match(/^<img/)) return para;
-                            if (para.trim() === '') return '';
-                            return '<p>' + para.trim() + '</p>';
-                        })
-                        .join('\n');
+                    // Configure marked to allow HTML
+                    marked.setOptions({
+                        breaks: true,
+                        gfm: true
+                    });
+                    
+                    // Convert markdown to HTML (preserves HTML tags like iframes)
+                    let html = marked(markdown);
+                    
+                    // Add custom styling to images
+                    html = html.replace(/<img/g, '<img style="max-width: 100%; height: auto; border-radius: 10px; margin: 1rem 0;"');
+                    
+                    // Add styling to iframes
+                    html = html.replace(/<iframe/g, '<iframe style="border-radius: 10px; margin: 1rem 0;"');
                     
                     contentDiv.innerHTML = html;
                     contentDiv.style.display = 'block';
