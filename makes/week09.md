@@ -1,8 +1,11 @@
 # Week 9 – Bots & Generators
 
 ## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+![Eye makeup with blue and pink eyeshadow - July 1971](../Assets/Images/vogue-july-1971.jpg)
+
+![Eye makeup with colorful glitter and pink eyeshadow](../Assets/Images/vogue-eye-makeup.jpg)
+
+![Eye makeup with blue glitter and dramatic lashes - July 1974](../Assets/Images/vogue-july-1974.jpg)
 
 ## Process Notes
 How did you make this?
