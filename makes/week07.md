@@ -1,7 +1,8 @@
 # Week 7 – Mapping AI Worlds
 
 ## The Artifact
-<iframe src="https://embed.kumu.io/a072ca8820ee879af71a6d43cacc1234" width="940" height="600" frameborder="0"></iframe>
+Describe or embed your artifact here.
+Include images, links, or media as appropriate.
 
 ## Process Notes
 How did you make this?
