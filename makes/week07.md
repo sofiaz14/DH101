@@ -1,8 +1,7 @@
 # Week 7 – Mapping AI Worlds
 
 ## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HpmsqwrasaxYAs4_dPn5CtTEQkesR9s&ehbc=2E312F" width="640" height="480"></iframe>
 
 ## Process Notes
 How did you make this?
