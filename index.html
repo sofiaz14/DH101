@@ -454,7 +454,7 @@
         <p>&copy; 2026 DH101 Critical Making. All content stored as markdown. 🌸</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
     <script>
         function showSection(sectionId) {
             // Hide all sections
@@ -482,7 +482,7 @@
                     });
                     
                     // Convert markdown to HTML (preserves HTML tags like iframes)
-                    let html = marked(markdown);
+                    let html = marked.parse(markdown);
                     
                     // Add custom styling to images
                     html = html.replace(/<img/g, '<img style="max-width: 100%; height: auto; border-radius: 10px; margin: 1rem 0;"');
