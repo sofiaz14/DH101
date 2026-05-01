@@ -331,6 +331,9 @@
                     <h3>Week 1</h3>
                     <p>Reverse Engineering</p>
                 </div>
+                <div class="week-card" onclick="loadContent('makes', 'week02')">
+                    <h3>Week 2</h3>
+                </div>
                 <div class="week-card" onclick="loadContent('makes', 'week03')">
                     <h3>Week 3</h3>
                 </div>
@@ -473,10 +476,13 @@
             
             // Fetch markdown file
             fetch(`${folder}/${file}.md`)
-                .then(response => response.text())
+                .then(response => {
+                    if (!response.ok) throw new Error(`File not found: ${file}.md`);
+                    return response.text();
+                })
                 .then(markdown => {
                     // Configure marked to allow HTML
-                    marked.setOptions({
+                    marked.use({
                         breaks: true,
                         gfm: true
                     });
@@ -492,7 +498,10 @@
                     
                     contentDiv.innerHTML = html;
                     contentDiv.style.display = 'block';
-                    contentDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Offset scroll to account for sticky header height
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const top = contentDiv.getBoundingClientRect().top + window.scrollY - headerHeight - 16;
+                    window.scrollTo({ top, behavior: 'smooth' });
                 })
                 .catch(error => {
                     console.error('Error loading file:', error);
