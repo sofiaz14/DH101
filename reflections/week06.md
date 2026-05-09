@@ -1,3 +1,6 @@
 # Week 6 Reflection
 
 Reflect 6: What do we gain/lose when machines “read” literature for us?
+## My Response
+
+These machines are very useful and can reveal hidden patterns and quickly generate interpretive frameworks for us. They allow us to process large amounts of text efficiently and to notice structural repetitions and linguistic trends that might otherwise go unnoticed. In this sense, machine reading expands our analytical capacity and gives new entry points into interpretation. At the same time, though, relying on these tools can distance us from the slower, more reflective engagement that characterizes human interpretation. The act of sitting, reading the text, and forming a personal response is harder to sustain when meaning is delivered solely through these machines. When machines read literature for us, we gain alternative perspectives, but we risk losing the subjective experience that makes reading transformative. Ultimately, machine reading reminds us that interpretation is always mediated, and that the tools we use inevitably shape the values and understanding we bring to a text.
