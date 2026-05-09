@@ -471,8 +471,8 @@
         function loadContent(folder, file) {
             const contentDiv = document.getElementById(folder + '-content');
             
-            // Fetch markdown file
-            fetch(`${folder}/${file}.md`)
+            // Fetch markdown file with cache busting
+            fetch(`${folder}/${file}.md?t=${Date.now()}`)
                 .then(response => {
                     if (!response.ok) throw new Error(`File not found: ${file}.md`);
                     return response.text();
