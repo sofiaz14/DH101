@@ -18,5 +18,7 @@ My map argues that the infrastructure behind major technology platforms such as 
 This mapping project connects closely to the ideas presented in Data Feminism, particularly the emphasis on examining power and making labor visible. Data feminism argues that data systems reflect existing power structures and that analyzing these systems requires asking who benefits and whose work is hidden. By mapping both infrastructure and labor, this project makes visible the workers and locations that are often invisible from discussions about technology platforms. In doing so, the map attempts to reveal how digital systems depend on networks of people, places, and power that are usually invisible to users.
 
 ## Attribution & AI Use
-- Tools used: Google My Maps
-- Sources: All data sources cited: https://datacenters.atmeta.com/all-locations/, https://datacenters.google/locations/, https://esgnews.com/meta-secures-up-to-6-6-gw-nuclear-power-to-fuel-ai-data-center-growth/, https://www.theverge.com/2019/12/16/21021005/google-youtube-moderators-ptsd-accenture-violent-disturbing-content-interviews-video, https://dgtlinfra.com/google-cloud-data-center-locations/
+- Tools used:
+- AI prompts (summary):
+- What AI generated:
+- What you changed or decided:
