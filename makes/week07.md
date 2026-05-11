@@ -12,7 +12,7 @@ What decisions did you make?
 Respond to this week’s reflection prompt in 200–300 words.
 
 ## Attribution & AI Use
-- Tools used:
+- Tools used: AI
 - AI prompts (summary):
 - What AI generated:
 - What you changed or decided:
