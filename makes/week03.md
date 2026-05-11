@@ -15,5 +15,5 @@ I see myself in both images through my similar facial features, especially my sm
 ## Attribution & AI Use
 - Tools used: DALLE 3
 - AI prompts (summary): 1. Gave DALLE a selfie of me and asked it to make my features better, but keep me recognizable 2. From the first image Dalle created, I then asked it to make me a student, less artificial and more realistic
-- What AI generated:
-- What you changed or decided:
+- What AI generated: 2 selfies
+- What you changed or decided: From my original uploaded selfie of myself, I wanted to change my features and background in the first image. In the second image I asked DALLE to take the selfie it created and make me a student that is less artificial and more realistic.
