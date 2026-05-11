@@ -1,18 +1,22 @@
-# Week 7 – Mapping AI Worlds
+# Meta & Google: Global Infrustructure
 
 ## The Artifact
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HpmsqwrasaxYAs4_dPn5CtTEQkesR9s&ehbc=2E312F" width="640" height="480"></iframe>
 
 ## Process Notes
-How did you make this?
-What tools did you use?
-What decisions did you make?
+✦ How did you make this? I did research on Meta and Googles infrustructure sites and from my research I pinned them on Google My Maps to create an interactive map.
+✦ What tools did you use? Google My Maps
+✦ What decisions did you make? What was important to put on the map versus what was not as relevant.
 
 ## Reflection
-Respond to this week’s reflection prompt in 200–300 words.
+To build this map, I researched the global infrastructure behind major technology companies, focusing specifically on Meta and Google. For data center locations, I primarily used the official infrastructure pages on Google’s and Meta’s company websites. These sites included interactive maps and infographics that provided background information about each facility and helped identify major data center locations and headquarters. I also used technology infrastructure databases and mapping resources that track hyperscale data centers to confirm several of these locations, including facilities outside of the United States. For content moderation and data labeling sites, I relied on a variety of sources because companies rarely publish detailed information about where this work takes place. Instead of official corporate sources, I used technology news reports and investigative journal articles that discuss outsourced digital labor within large technology companies. These sources helped identify some locations where content moderation and data labeling work is performed.
+The hardest information to find was the locations of content moderation and data labeling sites. Unlike data centers, which are sometimes publicly announced because they involve large infrastructure investments and partnerships with local governments, moderation and labeling work is often outsourced through third-party contractors and spread across multiple countries. Because of this, I found that the information about these labor hubs was reported indirectly through news investigations rather than official corporate sources. This difficulty in locating these sites highlights how much of the labor that supports social media platforms and artificial intelligence systems remains intentionally hidden.
+One of the most surprising things I noticed while mapping these locations was the geographic separation between technical infrastructure and human labor. Many of the large data centers are located in the United States or other wealthy regions with stable energy infrastructure and government incentives. In contrast, content moderation and data labeling work is frequently performed in regions with lower labor costs. This pattern suggests that the global infrastructure of major technology platforms depends not only on massive computing facilities but also on a distributed workforce that performs essential but often invisible work. Mapping these locations helped make visible the physical and human systems that support platforms that otherwise appear to operate entirely in the digital realm.
+
+## Artist Statement
+My map argues that the infrastructure behind major technology platforms such as Google and Meta is far more complex and geographically distributed than it appears. While these platforms often seem purely digital, the map reveals that they rely on a global network of physical data centers and human labor sites, including content moderation and data labeling facilities. By placing these locations together on one map, my map shows how large technology companies rely not only on powerful computing infrastructure but also on a dispersed workforce that performs essential yet often invisible work. The map, therefore, highlights the hidden systems that underpin digital platforms. For example, if I had mapped something different, such as only data centers or only company headquarters, the argument would be much less visible. Mapping only infrastructure could possibly reinforce the idea that technology platforms are driven primarily by machines and servers. By also including moderation and labeling sites, the map uncovers the human labor that supports these systems. This makes it possible to see how technological power is built on both physical infrastructure and distributed digital labor.
+This mapping project connects closely to the ideas presented in Data Feminism, particularly the emphasis on examining power and making labor visible. Data feminism argues that data systems reflect existing power structures and that analyzing these systems requires asking who benefits and whose work is hidden. By mapping both infrastructure and labor, this project makes visible the workers and locations that are often invisible from discussions about technology platforms. In doing so, the map attempts to reveal how digital systems depend on networks of people, places, and power that are usually invisible to users.
 
 ## Attribution & AI Use
-- Tools used:
-- AI prompts (summary):
-- What AI generated:
-- What you changed or decided:
+- Tools used: Google My Maps
+- Sources: All data sources cited: https://datacenters.atmeta.com/all-locations/, https://datacenters.google/locations/, https://esgnews.com/meta-secures-up-to-6-6-gw-nuclear-power-to-fuel-ai-data-center-growth/, https://www.theverge.com/2019/12/16/21021005/google-youtube-moderators-ptsd-accenture-violent-disturbing-content-interviews-video, https://dgtlinfra.com/google-cloud-data-center-locations/

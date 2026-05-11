@@ -1,15 +1,13 @@
-# Week 4 – Comic & Storytelling
+# Storytelling: Comic
 
 ## The Artifact
 
 ![Week 4 Comic - Living with My Landlord](Assets/week04-comic.png)
 
-A comic strip telling the story of living with a landlord through humorous interactions, featuring a cat as a character.
-
 ## Process Notes
-How did you make this?
-What tools did you use?
-What decisions did you make?
+✦ How did you make this? A comic template on Canva, and an AI image generator for the images.
+✦ What tools did you use? Canva, Nano Banana.
+✦ What decisions did you make? The story an images generated.
 
 ## Reflection
 

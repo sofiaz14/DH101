@@ -1,0 +1,160 @@
+:: StoryTitle
+Make 9 - AI interview
+
+
+:: StoryData
+{
+  "ifid": "98D2268D-D540-42D2-B51F-F1DCBD48FD79",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "AI Interview Starts",
+  "zoom": 1
+}
+
+
+:: \ Attitude Test {"position":"725,600","size":"100,100"}
+The AI says: "We will now evaluate your attitude and cultural fit."
+
+"Do you believe authority should be questioned?"
+
+[[Yes -> Confident Ending]]
+[[No -> Confident Ending]]
+[[Only sometimes -> Confident Ending]]
+
+
+:: \ Confident Answer {"position":"750,450","size":"100,100"}
+You say: "I am a very capable and hardworking person, and I think I would be a good fit for this job. But I am a little confused how an AI can evaluate my personality and ability from a few questions."
+
+The AI pauses.
+
+"This is a warning in my system and I am supposed to note that the candidate is questioning the interview process. Through your response I am able to tell that your confidence lever is very high but your compliance level is low. We will now continue the interview to an attitude test."
+
+[[Continue -> Attitude Test]]
+
+
+
+:: \ Confident Ending {"position":"775,725","size":"100,100"}
+The AI is analyzing your responses...
+
+"Candidate shows signs of independent thought and the candidate asked questions about the system. This suggests the candidate may not be easy to manage. This does not align with our company culture."
+
+"We are looking for candidates who are confident, but not too confident. For this reason, we will not be moving forward with your application."
+
+ENDING: Rejected.
+
+
+:: \ Corporate Bad Ending {"position":"700,875","size":"100,100"}
+The AI says: "Your answer showed honesty and independent thought. This does not align with our company culture and we will not be proceeding with you application."
+
+ENDING: Rejected.
+
+
+:: \ Corporate Good Ending {"position":"575,850","size":"100,100"}
+The AI says: 
+"Excellent. You used strong corporate language. This shows you understand how to speak professionally, even if you have never worked for our company, which is a skill we are directly looking for!" 
+
+ENDING: Hired.
+
+
+
+
+:: \ Corporate Test {"position":"625,700","size":"100,100"}
+The AI says:
+"Please describe this company in three words."
+
+[[Innovative, dynamic, and synergistic -> Corporate Good Ending]]
+[[I don't know anything about this company -> Corporate Bad Ending]]
+[[A cult -> Corporate Bad Ending]]
+
+
+:: \ Honest Answer {"position":"500,450","size":"100,100"}
+You say: "I am a hard working person, but honestly halfway through the day I usually
+don't want to be working anymore. I would rather be at home watching a show and doing
+something that does not require my energy. But if a job really requires me to be there,
+I will be there. It is just not my ideal activity."
+
+The AI pauses.
+
+"Uh oh, this is a warning in my system. The candidate has admitted to having a personality and prefers leisure time over productivity and I have to note this for the company."
+
+What do you say?
+
+[[Apologize -> Honest Apology]]
+[[Say you were joking -> Honest Joke]]
+
+
+:: \ Honest Apology {"position":"437.5,575","size":"100,100"}
+You say: "I'm sorry. I didn't mean it like that. I can be enthusiastic about work."
+
+The AI says: "We will now measure your enthusiasm for working. On a scale from 1 to 5, how excited are you to work every day?"
+
+[[1 -> Rejected Ending]]
+[[2 -> Rejected Ending]]
+[[3 -> Rejected Ending]]
+[[4 -> Next Round Ending]]
+[[5 -> Next Round Ending]]
+
+
+:: \ Honest Joke {"position":"562.5,575","size":"100,100"}
+You say: "I was joking. I love working. Working is my favorite thing."
+
+The AI says: "Joke detected."
+
+"Humor is not appropriate in a professional interview."
+
+"Humor suggests a lack of seriousness and possible independent thought."
+
+"We will now measure your enthusiasm for working."
+
+"On a scale from 1 to 5, how excited are you to work every day?"
+
+[[1 -> Joke Ending]]
+[[2 -> Joke Ending]]
+[[3 -> Joke Ending]]
+[[4 -> Joke Ending]]
+[[5 -> Joke Ending]]
+
+
+:: \ Joke Ending {"position":"500,725","size":"100,100"}
+The AI says: "Thank you for your responses. However, our system has determined that you used humor during the interview, and this suggests you won't take work seriously. We are looking for candidates who are serious at all times."
+
+ENDING: Rejected for humor.
+
+
+:: \ Next Round Ending {"position":"375,700","size":"100,100"}
+The AI says: 
+"Your enthusiasm score suggests you may be an acceptable candidate. You will be contacted later for another interview. You are now moving to Round 2: The Personality Alignment Interview."
+
+ENDING: To be continued...
+
+
+:: \ Professional Answer {"position":"625,450","size":"100,100"}
+You say: 
+"I am a highly motivated, results-driven team player with strong communication
+skills and a passion for problem solving."
+
+The AI says:
+"Excellent response. You used many professional keywords including 'motivated,' 'results-driven,' and 'team player. This means that you have a very high confidence lever and great corporate energy! We will now move to the corporate test part of this interview."
+
+[[Continue -> Corporate Test]]
+
+
+:: \ Rejected Ending {"position":"250,700","size":"100,100"}
+The AI says: "Thank you for your responses!"
+
+"Based on your enthusiasm score, we do not think you are a good fit."
+
+"We did not evaluate your skills, but we did evaluate your enthusiasm and it does not seem like you are the best fit for the job."
+
+ENDING: Rejected.
+
+
+:: AI Interview Starts {"position":"625,325","size":"100,100"}
+You open your laptop for your AI job interview, and a chatbot appears on the screen. The chatbot says 
+"Hello. I will be your AI interviewer for this position. Before we begin, it is mandatory that you know that this inverview is being recorded for quality and insurance purposes and of course because everyone makes mistakes!" 
+You hear this and think ok? and think it is a little weird but brush it off. The chatbot then says 
+"Let us begin with an easy question, tell me about yourself."
+
+[[Give an honest answer -> Honest Answer]]
+[[Give a professional answer -> Professional Answer]]
+[[Try to sound confident and impressive -> Confident Answer]]

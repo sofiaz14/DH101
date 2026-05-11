@@ -1,6 +1,6 @@
-# Week 13 Reflection
+# AI in 2042
 
-Reflect 13: Do we imagine AI futures as utopian, dystopian, or something in between? What do those visions reveal about us?
+AI in 2042: Do we imagine AI futures as utopian, dystopian, or something in between? What do those visions reveal about us?
 
 ## My Response
 

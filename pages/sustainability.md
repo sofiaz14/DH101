@@ -1,3 +1,3 @@
 # Sustainability & Ethics
 
-Reflect on environmental and ethical implications of AI.
+The environmental and ethical implications of AI made me think more carefully about what is behind the tools I use every day. AI can feel quick, easy, and invisible, but it depends on physical resources, including energy, water, data centers, and hardware. It also depends on human labor that is often hidden, such as content moderation, data labeling, and other work that makes these systems function. Ethically, this raises questions about who benefits from AI, who is harmed by it, and who gets left out of the conversation. I came to understand that AI is not just a neutral technology; it reflects choices about power, profit, labor, and responsibility. Thinking about these issues has made me more aware that using AI means also paying attention to its costs.

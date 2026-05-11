@@ -1,18 +1,20 @@
-# Week 8 – Networks of Knowledge & Power
+# Personal Network
 
 ## The Artifact
-<iframe src="https://embed.kumu.io/a072ca8820ee879af71a6d43cacc1234" width="940" height="600" frameborder="0"></iframe>
+<iframe src="https://embed.kumu.io/fd1f72d860f49acb568c6724ffc731dc" style="width: calc(100vw - 6rem); max-width: 1200px; height: 700px; border: 0; display: block;"></iframe>
 
 ## Process Notes
-How did you make this?
-What tools did you use?
-What decisions did you make?
+✦ How did you make this? I created this network map by identifying the digital platforms I use most often and connected them to companies, data types, and algorithms that shape my personal network.
+✦ What tools did you use? Kumu
+✦ What decisions did you make? I chose to center the recommendation algorithms because it connects many platforms together. I also chose which companies and data types to include in order to show where digital power is concentrated.
 
 ## Reflection
-Respond to this week’s reflection prompt in 200–300 words.
+The most central node in my network is the recommendation algorithm because it connects multiple platforms, data types, and companies. Many platforms, such as Instagram, TikTok, YouTube, Spotify, LinkedIn, and Amazon, rely on recommendation algorithms, showing that AI systems are central to how these platforms function. The recommendation algorithm is trained on different types of data, including user data, search history, listening history, and purchase history, and then it influences what content, products, music, or jobs users see. This makes the algorithm a central point of power in the network because it connects data collection to user experience.
+Several clusters emerged in my network. One cluster is the social media group, which includes Instagram, TikTok, Meta, and ByteDance. Another cluster is the Google cluster, which includes Google, YouTube, Gmail, and search history. A third cluster is focused on professional and work-related data, including LinkedIn and Microsoft. There are also clusters for shopping and entertainment, such as Amazon and purchase history, and Spotify and listening history. These clusters show that different companies control different parts of users’ digital lives, but they are all connected through data and algorithms.
+One surprising aspect of my network is how many different platforms are connected through the same types of data and AI systems. Even though these companies appear separate, they all rely on collecting user data and using algorithms to personalize content. This proves that platforms operate in identical ways. What is missing from my network is the user and the human labor behind these systems. The network shows companies, platforms, and algorithms, but it does not show the people whose data is being collected or the workers who help train and maintain AI systems. This shows how networks can make powerful companies and technologies visible while the people behind the crucial yet possibly inhumane labor remain invisible.
+
+## Artist Statement:
+My network visualization reveals that power in AI networks is concentrated in a small but highly influential set of large technology companies and in the algorithms that connect data to platforms. In the network, companies like Google, Meta, Microsoft, ByteDance, and Amazon appear as highly connected and central nodes. These companies control platforms such as Instagram, TikTok, YouTube, LinkedIn, Spotify, and Amazon, which collect large amounts of user data. That data is then used to train recommendation algorithms that determine what content, advertisements, products, music, and job opportunities users see. My network shows that power does not just come from owning platforms, but from controlling data and the algorithms that shape my experience. The most visible parts of my network are the companies and platforms, which appear as labeled nodes and central connections. In contrast, the most invisible parts of the network are the users and the human labor that make AI systems possible. My network includes “user data,” but it does not fully show the people who generate that data, content moderators who review harmful content, data labelers who train AI models, or warehouse workers who support companies like Amazon. These groups are essential to the system but are hidden within these AI networks. If this network were structured differently, it could tell a different story about power. For example, if the network were centered on users instead of companies, it would show how much these systems depend on human activity and data. This would shift the focus from corporate power to the labor and participation that make AI systems function.
 
 ## Attribution & AI Use
-- Tools used:
-- AI prompts (summary):
-- What AI generated:
-- What you changed or decided:
+- Tools used: Kumu

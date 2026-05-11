@@ -1,6 +1,6 @@
-# Week 11 Reflection
+# AI Invisible Work
 
-Reflect 11: Who does the invisible work of AI, and who profits from it?
+AI Invisible Work: Who does the invisible work of AI, and who profits from it?
 
 ## My Response
 

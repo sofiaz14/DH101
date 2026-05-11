@@ -1,13 +1,22 @@
-# Week 3 – Selfie & Identity
+# AI Selfie
 
 ## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+Uploaded image:
+
+![Uploaded image](../Assets/Images/week03-uploaded.png)
+
+Output 1:
+
+![Output 1](../Assets/Images/week03-output1.png)
+
+Output 2:
+
+![Output 2](../Assets/Images/week03-output2.png)
 
 ## Process Notes
-How did you make this?
-What tools did you use?
-What decisions did you make?
+✦ How did you make this? Uploaded a picture of myself to an AI image generator and then asked it to generate two different images of myself.
+✦ What tools did you use? DALLE image generator.
+✦ What decisions did you make? Generated a more "polished" version of myself, and then decided to make myself a student.
 
 ## Reflection
 I see myself in both images through my similar facial features, especially my smile, my eyes, and my overall facial expression. However, I do not fully recognize myself in either image, especially in the second one. When I asked for a student version, the outfit chosen felt more masculine and did not reflect my personal style or how I present myself. Because of this, I recognize myself much more in the first image, while the second feels disconnected from who I actually am. I also feel that both images ChatGPT created made me look almost alien-like and distorted my facial shape, and I think it did so to make me more "aesthetically pleasing".

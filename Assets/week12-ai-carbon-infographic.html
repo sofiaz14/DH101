@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Carbon Footprint — Environmental Infographic</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #04080c;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+  }
+
+  .ig {
+    background: #080c10;
+    color: #e0f4ee;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 680px;
+    border: 1px solid #0F6E56;
+  }
+
+  .ig-kicker {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: #1D9E75;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+  }
+
+  .ig-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    line-height: 1;
+    color: #e0f4ee;
+    margin-bottom: 0.25rem;
+  }
+
+  .ig-title span { color: #1D9E75; }
+
+  .ig-sub {
+    font-size: 11px;
+    color: #5DCAA5;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+  }
+
+  .divider {
+    height: 1px;
+    background: #1D9E75;
+    opacity: 0.3;
+    margin: 1.5rem 0;
+  }
+
+  .stat-hero {
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  .stat-hero .num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    color: #1D9E75;
+    line-height: 1;
+  }
+
+  .stat-hero .unit {
+    font-size: 13px;
+    color: #5DCAA5;
+    letter-spacing: 0.1em;
+    margin-top: 0.25rem;
+  }
+
+  .stat-hero .label {
+    font-size: 11px;
+    color: #4a6a5e;
+    margin-top: 0.4rem;
+  }
+
+  .section-head {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: #1D9E75;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .eq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  .eq-card {
+    background: #0d1a14;
+    border: 1px solid #0F6E56;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .eq-icon { font-size: 20px; margin-bottom: 4px; }
+
+  .eq-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 34px;
+    color: #5DCAA5;
+    line-height: 1;
+  }
+
+  .eq-desc { font-size: 11px; color: #4a7060; line-height: 1.4; }
+
+  .bar-item { margin-bottom: 14px; }
+
+  .bar-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+
+  .bar-name { color: #9FE1CB; }
+  .bar-val { color: #4a7060; }
+
+  .bar-track {
+    height: 6px;
+    background: #0d1a14;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid #0F6E56;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: #1D9E75;
+  }
+
+  .pulse-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+    background: #0d1a14;
+    border: 1px solid #0F6E56;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .pulse-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #1D9E75;
+    flex-shrink: 0;
+    animation: pulse 1.8s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.3; transform: scale(0.6); }
+  }
+
+  .pulse-text { font-size: 11px; color: #5DCAA5; line-height: 1.7; }
+  .pulse-text strong { color: #1D9E75; font-size: 13px; }
+
+  .query-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .query-row label { font-size: 11px; color: #4a7060; min-width: 160px; }
+  .query-row input { flex: 1; accent-color: #1D9E75; }
+  .query-row span { font-size: 12px; color: #5DCAA5; min-width: 28px; }
+
+  .result-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .r-card {
+    background: #0d1a14;
+    border: 1px solid #0F6E56;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+  }
+
+  .r-label { font-size: 10px; color: #4a7060; margin-bottom: 4px; }
+
+  .r-val {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    color: #5DCAA5;
+  }
+
+  .tree-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin-top: 0.5rem;
+  }
+
+  .tr { font-size: 14px; opacity: 0.1; transition: opacity 0.3s; }
+  .tr.on { opacity: 1; }
+
+  .source {
+    font-size: 10px;
+    color: #2a4a3a;
+    margin-top: 1.5rem;
+    line-height: 1.8;
+    border-top: 1px solid #0d1a14;
+    padding-top: 1rem;
+  }
+</style>
+</head>
+<body>
+<div class="ig">
+
+  <div class="ig-kicker">Environmental impact report</div>
+  <div class="ig-title">AI's <span>carbon</span><br>cost</div>
+  <div class="ig-sub">The hidden environmental price of artificial intelligence</div>
+
+  <div class="stat-hero">
+    <div class="num">552</div>
+    <div class="unit">METRIC TONS CO2</div>
+    <div class="label">emitted training GPT-3 — one single model</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-head">// what 552 tons equals</div>
+  <div class="eq-grid">
+    <div class="eq-card">
+      <div class="eq-icon">✈</div>
+      <div class="eq-num">560</div>
+      <div class="eq-desc">NYC → London flights</div>
+    </div>
+    <div class="eq-card">
+      <div class="eq-icon">🌳</div>
+      <div class="eq-num">9,200</div>
+      <div class="eq-desc">tree-years to absorb</div>
+    </div>
+    <div class="eq-card">
+      <div class="eq-icon">🏠</div>
+      <div class="eq-num">11.5</div>
+      <div class="eq-desc">US homes powered for a full year</div>
+    </div>
+    <div class="eq-card">
+      <div class="eq-icon">🚗</div>
+      <div class="eq-num">1.4M</div>
+      <div class="eq-desc">miles driven by gasoline car</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-head">// scale comparison (tons CO2)</div>
+
+  <div class="bar-item">
+    <div class="bar-top"><span class="bar-name">GPT-3 training run</span><span class="bar-val">552 t</span></div>
+    <div class="bar-track"><div class="bar-fill" style="width:100%;background:#1D9E75"></div></div>
+  </div>
+  <div class="bar-item">
+    <div class="bar-top"><span class="bar-name">US household / year</span><span class="bar-val">48 t</span></div>
+    <div class="bar-track"><div class="bar-fill" style="width:8.7%;background:#0F6E56"></div></div>
+  </div>
+  <div class="bar-item">
+    <div class="bar-top"><span class="bar-name">NYC → London flight</span><span class="bar-val">~1 t</span></div>
+    <div class="bar-track"><div class="bar-fill" style="width:0.2%;background:#085041"></div></div>
+  </div>
+  <div class="bar-item">
+    <div class="bar-top"><span class="bar-name">One ChatGPT query</span><span class="bar-val">0.0000045 t</span></div>
+    <div class="bar-track"><div class="bar-fill" style="width:0.001%;background:#04342C;border:1px solid #1D9E75"></div></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="pulse-row">
+    <div class="pulse-dot"></div>
+    <div class="pulse-text">
+      Every second, millions of queries hit AI servers.<br>
+      <strong>Each ChatGPT query ≈ 4.55g CO2.</strong> Small — but at scale, significant.
+    </div>
+  </div>
+
+  <div class="section-head">// your footprint calculator</div>
+
+  <div class="query-row">
+    <label>Daily ChatGPT queries</label>
+    <input type="range" min="0" max="100" value="10" step="1" id="q" oninput="calc()">
+    <span id="qv">10</span>
+  </div>
+  <div class="query-row">
+    <label>Image generations / day</label>
+    <input type="range" min="0" max="50" value="3" step="1" id="im" oninput="calc()">
+    <span id="iv">3</span>
+  </div>
+
+  <div class="result-strip">
+    <div class="r-card">
+      <div class="r-label">yearly AI emissions</div>
+      <div class="r-val" id="yr">—</div>
+    </div>
+    <div class="r-card">
+      <div class="r-label">trees to offset</div>
+      <div class="r-val" id="tn">—</div>
+    </div>
+  </div>
+
+  <div class="tree-row" id="trees"></div>
+
+  <div class="source">
+    Sources: Strubell et al. 2019 (GPT-3 training) &middot; Patterson et al. 2021 (image generation) &middot;
+    Goldman Sachs / IFLScience (~4.55g CO2 per ChatGPT query) &middot; EPA (avg US household ~48t CO2/yr) &middot;
+    ICAO Carbon Emissions Calculator (NYC–LHR ~986kg CO2) &middot; US Forest Service (1 tree absorbs ~21kg CO2/yr)
+  </div>
+
+</div>
+
+<script>
+function calc() {
+  const q = parseInt(document.getElementById('q').value);
+  const im = parseInt(document.getElementById('im').value);
+  document.getElementById('qv').textContent = q;
+  document.getElementById('iv').textContent = im;
+
+  const g = (q * 4.55 + im * 2.9) * 365;
+  const kg = g / 1000;
+
+  let lbl;
+  if (g < 1000) lbl = Math.round(g) + 'g';
+  else if (kg < 1000) lbl = kg.toFixed(1) + 'kg';
+  else lbl = (kg / 1000).toFixed(2) + 't';
+
+  document.getElementById('yr').textContent = lbl + ' CO2';
+
+  const t = Math.max(1, Math.ceil(kg / 21));
+  document.getElementById('tn').textContent = t.toLocaleString();
+
+  const strip = document.getElementById('trees');
+  strip.innerHTML = '';
+  const show = Math.min(t, 80);
+  for (let i = 0; i < 80; i++) {
+    const d = document.createElement('div');
+    d.className = 'tr' + (i < show ? ' on' : '');
+    d.textContent = '🌳';
+    strip.appendChild(d);
+  }
+  if (t > 80) {
+    const m = document.createElement('div');
+    m.style.cssText = 'font-size:10px;color:#4a7060;margin-top:6px;width:100%';
+    m.textContent = '+' + (t - 80).toLocaleString() + ' more trees needed';
+    strip.appendChild(m);
+  }
+}
+
+calc();
+</script>
+</body>
+</html>

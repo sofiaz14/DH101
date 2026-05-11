@@ -1,6 +1,6 @@
-# Week 5 Reflection
+# Who Owns AI-Made Art?
 
-Reflect 5: How does AI alter authorship and remix culture? Who owns AI-made art?
+Who Owns AI-Made Art?
 
 ## My Response
 

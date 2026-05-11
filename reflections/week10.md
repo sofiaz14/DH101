@@ -1,6 +1,6 @@
-# Week 10 Reflection
+# Changing Relationships With AI
 
-Reflect 10: How does AI change our relationship to play, rules, and narrative?
+Changing Relationships With AI: How does AI change our relationship to play, rules, and narrative?
 
 ## My Response
 

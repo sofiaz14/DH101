@@ -1,6 +1,6 @@
-# Week 12 Reflection
+# Environmental Impact Report
 
-Reflect 12: Is AI sustainable? What ecological trade-offs are we willing to accept?
+Environmental Impact Report: Is AI sustainable? What ecological trade-offs are we willing to accept?
 
 ## My Response
 

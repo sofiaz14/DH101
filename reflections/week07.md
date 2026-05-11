@@ -1,6 +1,6 @@
-# Week 7 Reflection
+# AI Reshape Global Geographies of Power, Labor, and Environment
 
-Reflect 7: How does AI reshape global geographies of power, labor, and environment?
+AI Reshape Global Geographies of Power, Labor, and Environment: How does AI reshape global geographies of power, labor, and environment?
 
 ## My Response
 

@@ -1,6 +1,6 @@
-# Week 9 Reflection
+# AI & Endless Creativity
 
-Reflect 9: What is creativity when AI can generate endlessly? Where is the human in generative work?
+AI & Endless Creativity: What is creativity when AI can generate endlessly? Where is the human in generative work?
 
 ## My Response
 

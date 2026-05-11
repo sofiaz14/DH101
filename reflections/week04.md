@@ -1,6 +1,6 @@
-# Week 4 Reflection
+# Is AI a Collaborator, Tool, or Plagiarist?
 
-Reflect 4: Is AI a collaborator, tool, or plagiarist in storytelling?
+Is AI a Collaborator, Tool, or Plagiarist?
 
 ## My Response
 

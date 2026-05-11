@@ -1,3 +1,3 @@
 # How I Use AI
 
-Describe how you approach AI use in this course.
+In this course, I used AI as both a tool and a subject of inquiry. I used AI to help brainstorm ideas, organize my thoughts, generate images, and experiment with different forms of digital making, but I tried not to treat it as a replacement for my own decisions. A lot of my work focused on figuring out where AI was helpful and where it became limited, repetitive, or unclear. I also became more aware that AI is not just a creative tool; it is connected to larger systems of data, labor, power, and environmental impact. Because of that, I used AI carefully and critically, considering what it produced, what I changed, and the hidden processes that made the technology possible.

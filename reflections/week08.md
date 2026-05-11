@@ -1,6 +1,6 @@
-# Week 8 Reflection
+# Visibility in AI Networks
 
-Reflect 8: Who is visible/invisible in AI networks? How does visualization reveal or obscure power?
+Visibility in AI Networks: Who is visible/invisible in AI networks? How does visualization reveal or obscure power?
 
 ## My Response
 

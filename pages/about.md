@@ -1,3 +1,7 @@
-# About Me
+<div style="max-width: 900px;">
+  <h1 style="margin: 0 0 1rem; font-family: Georgia, 'Garamond', serif; font-size: 3.2rem; line-height: 1.05; color: #2c2c2c;">About Me</h1>
 
-Introduce yourself and your interests.
+  <img src="../Sofia%20stuff/Screenshot%202026-05-11%20at%2013.21.57.png" alt="Portrait of Sofia holding a graduation cap" style="display:block; max-width:340px; width:100%; height:auto; margin:0 0 1.5rem; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.12);">
+
+  <p style="margin: 0; font-size: 1.05rem; line-height: 1.75; color: #2c2c2c;">Welcome to my page! My name is Sofia Amalia Zafirpulos, I am a senior at Denison University majoring in Communication, and I am originally from Annapolis, Maryland. I am interested in media, digital culture, communication, creativity, and the ways technology shapes how people interact with the world. Throughout this course, I have become especially interested in artificial intelligence and the visible and hidden ways it affects everyday life, from image generation and chatbots to data collection, algorithms, labor, and environmental impact. This website is a course-long project that brings together the assignments and artifacts I created throughout the semester, showing my process of learning, questioning, and making as I explored how AI operates in both obvious and less visible ways.</p>
+</div>
