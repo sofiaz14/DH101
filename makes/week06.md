@@ -4,9 +4,9 @@
 
 ChatGPT:
 
-![Overall interpretation](/Assets/Images/week06-overall-interpretation.png)
+![Overall interpretation](Assets/Images/week06-overall-interpretation.png)
 
-![Core themes at work](/Assets/Images/week06-core-themes.png)
+![Core themes at work](Assets/Images/week06-core-themes.png)
 
 Voyant:
 

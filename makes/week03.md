@@ -3,15 +3,15 @@
 ## The Artifact
 Uploaded image:
 
-![Uploaded image](../Assets/Images/week03-uploaded.png)
+![Uploaded image](Assets/Images/week03-uploaded.png)
 
 Output 1:
 
-![Output 1](../Assets/Images/week03-output1.png)
+![Output 1](Assets/Images/week03-output1.png)
 
 Output 2:
 
-![Output 2](../Assets/Images/week03-output2.png)
+![Output 2](Assets/Images/week03-output2.png)
 
 ## Process Notes
 ✦ How did you make this? Uploaded a picture of myself to an AI image generator and then asked it to generate two different images of myself.

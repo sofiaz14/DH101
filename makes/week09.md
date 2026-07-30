@@ -5,15 +5,15 @@
 
 Prompt: Make this image a 1970s Vogue film photography style
 
-![Eye makeup with blue and pink eyeshadow - July 1971](../Assets/Images/vogue-july-1971.jpg)
+![Eye makeup with blue and pink eyeshadow - July 1971](Assets/Images/vogue-july-1971.jpg)
 
 Prompt: Change the lighting again to a colored gel lighting
 
-![Eye makeup with colorful glitter and pink eyeshadow](../Assets/Images/vogue-eye-makeup.jpg)
+![Eye makeup with colorful glitter and pink eyeshadow](Assets/Images/vogue-eye-makeup.jpg)
 
 Prompt: Take the heart out and make the eyeshadow a shimmery light blue
 
-![Eye makeup with blue glitter and dramatic lashes - July 1974](../Assets/Images/vogue-july-1974.jpg)
+![Eye makeup with blue glitter and dramatic lashes - July 1974](Assets/Images/vogue-july-1974.jpg)
 
 ## Process Notes
 ✦ How did you make this? I started with one base image prompt for the AI to generate and then changed one visual detail at a time, such as lighting, makeup, color, texture, and symbols.

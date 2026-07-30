@@ -1,7 +1,7 @@
 # Harmful Hidden Labor
 
 ## The Artifact
-![Hidden Labor and Content Moderation in Social Media](../Assets/Images/week11-hidden-labor-content-moderation.png)
+![Hidden Labor and Content Moderation in Social Media](Assets/Images/week11-hidden-labor-content-moderation.png)
 
 ## Process Notes
 ✦ How did you make this? I researched hidden labor in content moderation and turned the most important statistics and worker experiences into a visual infographic.
